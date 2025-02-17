@@ -31,7 +31,7 @@ const Item = ({ item, width }) => {
           alt={item.name}
           width='300px'
           height='400px'
-          src={`/assets/images/${image}`}
+          src={`${import.meta.env.BASE_URL}/assets/images/${image}`}
           onClick={() => navigate(`/item/${item.id}`)}
           style={{ cursor: 'pointer' }}
         />
