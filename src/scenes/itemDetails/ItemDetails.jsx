@@ -47,7 +47,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width='100%'
             height='100%'
-            src={`/assets/images/${item?.image}`}
+            src={`${import.meta.env.BASE_URL}/assets/images/${item?.image}`}
             style={{ objectFit: 'contain' }}
           />
         </Box>

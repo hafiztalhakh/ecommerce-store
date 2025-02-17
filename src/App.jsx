@@ -23,7 +23,7 @@ const ScrollToTop = () => {
 function App() {
   return (
     <div className='app'>
-      <BrowserRouter basename='/react-ecommerce/'>
+      <BrowserRouter basename={import.meta.env.BASE_URL ?? '/'}>
         <Navbar />
         <ScrollToTop />
         <Routes>
