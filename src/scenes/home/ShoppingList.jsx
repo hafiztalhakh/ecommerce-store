@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Item from '../../components/Item';
 import { setItems } from '../../state';
-import data from '../../../public/assets/data/items.json';
+import data from '../../data/items.json';
 
 const ShoppingList = () => {
   const dispatch = useDispatch();

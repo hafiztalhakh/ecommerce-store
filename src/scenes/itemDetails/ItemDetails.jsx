@@ -10,7 +10,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import Item from '../../components/Item';
 import { shades } from '../../theme';
 import { addToCart } from '../../state';
-import data from '../../../public/assets/data/items.json';
+import data from '../../data/items.json';
 
 const ItemDetails = () => {
   const dispatch = useDispatch();
@@ -47,7 +47,7 @@ const ItemDetails = () => {
             alt={item?.name}
             width='100%'
             height='100%'
-            src={`/assets/images/${item?.image}`}
+            src={`${import.meta.env.BASE_URL}/assets/images/${item?.image}`}
             style={{ objectFit: 'contain' }}
           />
         </Box>

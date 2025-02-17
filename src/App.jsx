@@ -23,7 +23,7 @@ const ScrollToTop = () => {
 function App() {
   return (
     <div className='app'>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL ?? '/'}>
         <Navbar />
         <ScrollToTop />
         <Routes>
